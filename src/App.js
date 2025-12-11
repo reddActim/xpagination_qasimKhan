@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 function App() {
 
   const [data, setData] = useState(null);
-  const [currentPage, setCurrentPage] = useState(5);
+  const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
 
   useEffect(() => {
