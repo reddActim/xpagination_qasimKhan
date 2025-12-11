@@ -29,6 +29,8 @@ function App() {
             <th>Email</th>
             <th>Role</th>
           </tr>
+        </thead>
+        <tbody>
           {data && data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage).map((item) => (
             <tr key={item.id}>
               <td>{item.id}</td>
@@ -37,8 +39,7 @@ function App() {
               <td>{item.role}</td>
             </tr>
           ))}
-
-        </thead>
+        </tbody>
       </table>
       <div>
         <button
