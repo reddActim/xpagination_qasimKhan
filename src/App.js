@@ -51,10 +51,10 @@ function App() {
         <span
           style={{ margin: "0 15px", backgroundColor: "rgba(21, 100, 71, 1)", color: "white", padding: "10px", border: "none", borderRadius: "4px" }}
         >
-          {currentPage}
+          {String(currentPage)}
         </span>
         <button
-          onClick={() => { if (currentPage < Math.ceil(data.length / itemsPerPage)) setCurrentPage(currentPage + 1) }}
+          onClick={() => { if (data && currentPage < Math.ceil(data.length / itemsPerPage)) setCurrentPage(currentPage + 1) }}
           style={{ backgroundColor: "rgba(21, 100, 71, 1)", color: "white", padding: "5px 10px", border: "none", borderRadius: "4px" }}
         >
           Next
